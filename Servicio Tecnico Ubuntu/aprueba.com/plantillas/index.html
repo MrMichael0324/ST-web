@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <title>Servicio tecnico</title>
+</head>
+<body>
+    <div class="div-header">
+        <div>
+            <img src="{% static "img/ServiPc.png" %}" class="icono1">
+            <a href="">ServiPc</a>
+        </div>
+        <div class="nav-1">
+            <a href="">Servicio tecnico</a>
+            <a href="">Venta de equipos</a>
+            <a href="">Contacto</a>
+        </div>
+        <div class="dis-flex">
+            <a href="/CrearCuenta" class="btn-CreCue">Crear cuenta</a>
+            <a href="/Login" class="btn-IniSes">Iniciar sesión</a>
+        </div>
+    </div>
+    <div class="div-principal dis-flex">
+        <div class="div-text-1">
+            <p class="text-1">¿Necesesitas ayuda con tu computadora? Nosotros somos la solución</p>
+        </div>
+        <div class="div-btn-RellForm">
+            <a href="" class="btn-RellForm">Rellenar formulario</a>
+        </div>
+        <a href="#" class="whatsapp-button" onclick="openWhatsApp('+56911111111')"> 
+            <img src="{% static "img/WhatsApp.png" %}" alt="WhatsApp" class="whatsapp-icon">
+            ¡Contáctanos por WhatsApp!
+        </a>
+        
+        <script>
+            function openWhatsApp(phoneNumber) {
+            var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            var url = "";
+        
+            if (isMobile) {
+                url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=Hola%20!Quisiera%20hacer%20una%20consulta¡";
+            } else {
+                url = "https://web.whatsapp.com/send?phone=" + phoneNumber + "&text=Hola%20!Quisiera%20hacer%20una%20consulta¡";
+            }
+        
+            window.open(url, "_blank");
+            }
+        </script>
+    </div>
+</body>
+</html>

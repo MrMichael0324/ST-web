@@ -1,0 +1,98 @@
+.icono1{
+    width: 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.div-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+.dis-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-IniSes{
+    border-radius: 0px 30px 30px 0px;
+    border: solid 1px #1eaaf1;;
+    padding: 10px;
+    color: white;
+    background-color: #1eaaf1;
+}
+.btn-CreCue{
+    border: solid 1px black;
+    border-radius: 30px 0px 0px 30px;
+    padding: 10px;
+}
+.btn-CreCue:hover{
+    background-color: #1eaaf1;
+    color: white;
+}
+.btn-IniSes:hover{
+    background-color: white;
+    color: #1eaaf1;
+    border: solid 1px #1eaaf1;
+}
+.btn-RellForm{
+    border-radius: 20px;
+    padding: 12px 30px;
+    background-color: #1eaaf1;
+    color: white;
+    width: 100%;
+}
+.btn-RellForm:hover{
+    background-color: white;
+    color: #1eaaf1;
+    border: solid 1px #1eaaf1;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    z-index: 9999;
+}
+  
+.whatsapp-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.nav-1{
+    display: flex;
+}
+.nav-1 a{
+    margin: 30px 10px;
+}
+.div-text-1{
+    max-width: 500px;
+    color: white;
+}
+.text-1{
+    font-size: 45px;
+    margin: 0px;
+    padding: 50px 0px 50px 50px;
+
+}
+.div-principal {
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.div-btn-RellForm{
+    width: 100%;
+    padding-left: 50px;
+}
